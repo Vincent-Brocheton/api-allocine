@@ -4,13 +4,15 @@ import { ListeCinemaComponent } from './liste-cinema/liste-cinema.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PanierComponent } from './panier/panier.component';
 import { ListFilmComponent } from './list-film/list-film.component';
+import { HomeComponent } from './home/home.component';
 
 
 const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'panier', component: PanierComponent },
   { path: 'film/:idCinema', component: ListFilmComponent },
-  { path: 'cinema', component: ListeCinemaComponent },
-  { path: '', redirectTo: '/cinema', pathMatch: 'full' },
+  { path: 'cinemas', component: ListeCinemaComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 

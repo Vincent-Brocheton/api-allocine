@@ -3,16 +3,16 @@ export const cinemas = [
         id : 0 ,
         nom : 'Gaumont Valenciennes',
         adresse : 'Le grand batiment marqué Gaumont' ,
-        img: '...',
+        img: 'Gaumont-Valenciennes.jpg',
         films : [
             {
-                titre : '',
+                titre : 'Rambo',
                 description : '',
                 seances : []
 
             },
             {
-                titre : '',
+                titre : 'Bambi',
                 description : '',
                 seances : []
 
@@ -23,16 +23,16 @@ export const cinemas = [
         id : 1 ,
         nom : 'Cin Amand ',
         adresse : 'Le grand batiment marqué Cin Amand' ,
-        img: '...',
+        img: 'cin-amand.jpg',
         films : [
             {
-                titre : '',
+                titre : 'Brice de Nice',
                 description : '',
                 seances : []
 
             },
             {
-                titre : '',
+                titre : 'Willow',
                 description : '',
                 seances : []
 

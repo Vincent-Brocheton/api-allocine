@@ -12,6 +12,7 @@ import { CardCinemaComponent } from './card-cinema/card-cinema.component';
 import { CardFilmComponent } from './card-film/card-film.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SeanceComponent } from './seance/seance.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SeanceComponent } from './seance/seance.component';
     CardCinemaComponent,
     CardFilmComponent,
     NavbarComponent,
-    SeanceComponent
+    SeanceComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
