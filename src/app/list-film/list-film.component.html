@@ -1,0 +1,9 @@
+<h2>Liste des films</h2>
+<div class="row">
+  <div class="offset-1 col-10 offset-md-0 col-md-6 col-xl-4" *ngFor="let cinema of cinemas; index as id">
+
+    <app-card-film [cinema]="cinema"></app-card-film>
+
+  </div>
+</div>
+
