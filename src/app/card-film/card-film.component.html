@@ -1,11 +1,10 @@
-<p>card-film works!</p>
-
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">{{cinema.films.titre}}</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        <a href="#" class="btn btn-primary">Réserver une séance</a>
+<div class="row mb-3">
+    <div class="col-2 col-lg-1">
+        <img class="" style="width: 5rem;" [src]="'images/' + film.image" alt="Film image cap">
+    </div>
+    <div class="col-10 col-lg-11">
+        <h4>{{film.titre}}</h4>
+        <p>durée: {{film.duree.hours}}h {{film.duree.minutes}}</p>
+        <button class="btn btn-outline-primary">Voir les Séances</button>
     </div>
 </div>

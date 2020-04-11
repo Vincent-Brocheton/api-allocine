@@ -11,7 +11,6 @@ import { ListFilmComponent } from './list-film/list-film.component';
 import { CardCinemaComponent } from './card-cinema/card-cinema.component';
 import { CardFilmComponent } from './card-film/card-film.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SeanceComponent } from './seance/seance.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -24,7 +23,6 @@ import { HomeComponent } from './home/home.component';
     CardCinemaComponent,
     CardFilmComponent,
     NavbarComponent,
-    SeanceComponent,
     HomeComponent
   ],
   imports: [

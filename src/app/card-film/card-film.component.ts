@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardFilmComponent implements OnInit {
 
-  @Input() cinema ;
+  @Input() film;
 
   constructor() { }
 

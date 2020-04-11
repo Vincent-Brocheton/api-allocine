@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { cinemas } from '../cinemas';
+import { Cinema } from '../cinema';
+import { CinemaService } from '../cinema.service';
 
 @Component({
   selector: 'app-liste-cinema',
@@ -8,11 +9,14 @@ import { cinemas } from '../cinemas';
 })
 export class ListeCinemaComponent implements OnInit {
 
-  cinemas = cinemas;
+  cinema : Cinema[];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(cinemaService : CinemaService) { 
+    this.cinema = cinemaService.getAll();
   }
+
+  ngOnInit() {
+  }
+
 
 }

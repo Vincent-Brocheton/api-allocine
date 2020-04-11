@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { cinemas } from '../cinemas';
+import { ActivatedRoute } from '@angular/router';
+
+import { CinemaService } from '../cinema.service';
+import { FilmService } from '../film.service';
+
+import { Cinema } from '../cinema';
+import { Film } from '../film';
+
 
 @Component({
   selector: 'app-list-film',
@@ -8,11 +15,19 @@ import { cinemas } from '../cinemas';
 })
 export class ListFilmComponent implements OnInit {
 
-  cinemas = cinemas;
+  cinema : Cinema;
+  films : Film[];
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private cinemaService: CinemaService,
+    private filmService: FilmService,
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    let id : number = +this.route.snapshot.paramMap.get('idCinema');
+    this.cinema = this.cinemaService.get(id);
+    this.films = this.filmService.getAll(id);
   }
 
 }
