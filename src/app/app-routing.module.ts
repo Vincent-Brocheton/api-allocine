@@ -5,10 +5,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { PanierComponent } from './panier/panier.component';
 import { ListFilmComponent } from './list-film/list-film.component';
 import { HomeComponent } from './home/home.component';
+import { SeancesComponent } from './seances/seances.component'
 
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'seance/:idFilm/:idCinema', component: SeancesComponent },
   { path: 'panier', component: PanierComponent },
   { path: 'film/:idCinema', component: ListFilmComponent },
   { path: 'cinemas', component: ListeCinemaComponent },
