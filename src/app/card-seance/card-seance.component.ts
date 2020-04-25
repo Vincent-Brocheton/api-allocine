@@ -33,9 +33,4 @@ export class CardSeanceComponent implements OnInit {
     return moment(date).format('HH:mm');
   }
 
-  calcHeureFin(date, length: Time) {
-    const endHour = moment(date).add(length.hours, 'hours').add(length.minutes, 'minutes');
-    return moment(endHour).format('HH:mm');
-  }
-
 }

@@ -1,1 +1,33 @@
-<p>panier works!</p>
+<div *ngIf="seances.length === 0; then thenBlock else elseBlock"></div>
+
+<ng-template #thenBlock>
+  <h1 class="mt-4">Aucun article dans votre panier retounez a la page <a href="/cinemas">Cinema</a> </h1>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h1 class="mt-4">Votre panier</h1>
+
+  <table class="table table-striped mt-4">
+    <thead>
+    <tr>
+      <th>Article N°</th>
+      <th>Cinéma</th>
+      <th>Film</th>
+      <th>Date</th>
+      <th>Heure de début</th>
+      <th>Prix</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let seance of seances; index as id">
+      <td>{{id + 1}}</td>
+      <td>{{seance.cinema.nom}}</td>
+      <td>{{seance.film.titre}}</td>
+      <td>{{dateSeance(seance.debut)}}</td>
+      <td>{{heureDebutSeance(seance.debut)}}</td>
+      <td>{{seance.prix | currency:'EUR':'symbol':undefined:'fr-FR'}}</td>
+    </tr>
+    </tbody>
+  </table>
+</ng-template>

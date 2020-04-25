@@ -3,7 +3,6 @@
       <tr>
         <th>Date</th>
         <th>Heure de début</th>
-        <th>Heure de fin</th>
         <th>Prix</th>
         <th></th>
       </tr>
@@ -12,7 +11,6 @@
       <tr *ngFor="let seance of seances">
         <td>{{dateSeance(seance.debut)}}</td>
         <td>{{heureDebutSeance(seance.debut)}}</td>
-        <td>{{calcHeureFin(seance.debut, seance.film.duree)}}</td>
         <td>{{seance.prix | currency:'EUR':'symbol':undefined:'fr-FR'}}</td>
         <td><button class="btn btn-primary" (click)="ajouterPanier(seance)"><span class="material-icons align-middle">add_shopping_cart</span> Reserver </button></td>
       </tr>
