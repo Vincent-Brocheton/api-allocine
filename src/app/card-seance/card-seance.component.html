@@ -11,10 +11,10 @@
     <tbody>
       <tr *ngFor="let seance of seances">
         <td>{{dateSeance(seance.debut)}}</td>
-        <td>{{hourBeginSeance(seance.debut)}}</td>
+        <td>{{heureDebutSeance(seance.debut)}}</td>
         <td>{{calcHeureFin(seance.debut, seance.film.duree)}}</td>
         <td>{{seance.prix | currency:'EUR':'symbol':undefined:'fr-FR'}}</td>
-        <td></td>
+        <td><button class="btn btn-primary" (click)="ajouterPanier(seance)"><span class="material-icons align-middle">add_shopping_cart</span> Reserver </button></td>
       </tr>
     </tbody>
 </table>

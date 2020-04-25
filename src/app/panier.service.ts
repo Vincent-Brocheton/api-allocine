@@ -5,5 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class PanierService {
 
+  seances = [];
+
   constructor() { }
+
+  ajouterPanier(seance) {
+    this.seances.push(seance);
+  }
+
+  getPanier() {
+    return this.seances;
+  }
 }

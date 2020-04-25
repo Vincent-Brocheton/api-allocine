@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as moment from 'moment';
 import { Time } from '@angular/common';
+import { PanierService } from '../panier.service';
 
 @Component({
   selector: 'app-card-seance',
@@ -13,21 +14,21 @@ export class CardSeanceComponent implements OnInit {
   @Input() cinema;
   @Input() seances;
 
-  constructor() { }
+  constructor(private panier: PanierService) { }
 
   ngOnInit() {
   }
 
-  // ajouterPanier(seance) {
-  //   this.panier.ajouterPanier(seance);
-  // }
+  ajouterPanier(seance) {
+   this.panier.ajouterPanier(seance);
+  }
 
   dateSeance(date) {
     moment.locale('fr');
     return moment(date).format('LL');
   }
 
-  hourBeginSeance(date) {
+  heureDebutSeance(date) {
     moment.locale('fr');
     return moment(date).format('HH:mm');
   }
