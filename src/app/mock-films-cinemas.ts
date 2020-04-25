@@ -31,7 +31,7 @@ export const films : Film[] = [
         titre: 'USUAL SUSPECTS',
         duree: {hours: 1, minutes: 46},
         image: '69199504_af.jpg-c_215_290_x-f_jpg-q_x-xxyxx.jpg',
-        synopsis: '',
+        synopsis: 'Suite à une mystérieuse dénonciation, cinq criminels se retrouvent en garde à vue. Plus tard, engagés sur un coup par le génie du crime Keyser Söze, les cinq hommes sont pris au piège d’une diabolique machination… ',
         cinemas: [
             {
                 id: 1,

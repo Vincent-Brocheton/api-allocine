@@ -5,6 +5,6 @@ export interface Seance {
   id: number,
   cinema: Cinema,
   film: Film,
-  datetime: string,
+  debut: string,
   prix: any
 }

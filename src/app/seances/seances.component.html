@@ -1,1 +1,10 @@
-<p>seances works!</p>
+<h1>{{film.titre}}</h1>
+
+<img [src]="'images/' + film.image" alt="D.A.R.Y.L.">
+
+<div>Synopsis : {{film.synopsis}}</div>
+
+<div>Durée : {{film.duree.hours}} h {{film.duree.minutes}} m</div>
+
+<app-card-seance [seances]="seances"></app-card-seance>
+

@@ -17,9 +17,8 @@ export class FilmService {
     });
   }
 
-  get(idCinema, idFilm) : Film {
-    return null;
-    //return cinemas.find(element => element.id === id);
+  get(idFilm) : Film {
+    return films.find(f => f.id === idFilm);
   }
 
 }

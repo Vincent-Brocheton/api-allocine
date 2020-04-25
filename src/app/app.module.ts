@@ -13,6 +13,7 @@ import { CardFilmComponent } from './card-film/card-film.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SeancesComponent } from './seances/seances.component';
+import { CardSeanceComponent } from './card-seance/card-seance.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SeancesComponent } from './seances/seances.component';
     CardFilmComponent,
     NavbarComponent,
     HomeComponent,
-    SeancesComponent
+    SeancesComponent,
+    CardSeanceComponent
   ],
   imports: [
     BrowserModule,

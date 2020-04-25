@@ -1,0 +1,20 @@
+<table class="table table-striped mt-4">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Heure de début</th>
+        <th>Heure de fin</th>
+        <th>Prix</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let seance of seances">
+        <td>{{dateSeance(seance.debut)}}</td>
+        <td>{{hourBeginSeance(seance.debut)}}</td>
+        <td>{{calcHeureFin(seance.debut, seance.film.duree)}}</td>
+        <td>{{seance.prix | currency:'EUR':'symbol':undefined:'fr-FR'}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+</table>
