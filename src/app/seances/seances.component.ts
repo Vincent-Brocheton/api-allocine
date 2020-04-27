@@ -14,10 +14,9 @@ import { SeanceService } from '../seance.service';
 })
 export class SeancesComponent implements OnInit {
 
-  seances: Seance[];
+  seances : Seance[];
   film: Film;
   cinema: Cinema;
-  cinemas: Cinema[];
 
   constructor(
     private route: ActivatedRoute,
@@ -28,12 +27,13 @@ export class SeancesComponent implements OnInit {
   }
 
   ngOnInit() {
+    
     const idCinema: number = +this.route.snapshot.paramMap.get('idCinema');
     const idFilm: number = +this.route.snapshot.paramMap.get('idFilm');
     this.cinema = this.cinemaService.get(idCinema);
     this.film = this.filmService.get(idFilm);
-    this.seances = this.seanceService.getAllSeanceByCinemaByFilm(idCinema, idFilm);
-    this.cinemas = this.cinemaService.getAll();
+    this.seances = this.seanceService.getAllSeance(idCinema, idFilm);
   }
 
+    
 }

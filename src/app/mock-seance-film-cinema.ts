@@ -1,7 +1,6 @@
 import {Seance} from './seance';
 
-export const
-  seances: Seance[] = [
+export const seances : Seance[] = [
     {
       id: 0,
       cinema:
@@ -26,46 +25,22 @@ export const
               adresse: 'rue des Alpes 59300 Valenciennes',
               ville: 'Valenciennes',
               img: 'Gaumont-Valenciennes.jpg'
-          } 
+            },
+            {
+              id: 2,
+                  nom: 'Cin\'Amand', 
+                  adresse: 'Rocade du Nord, 59230 Saint-Amand-les-Eaux',
+                  ville: 'Saint-Amand-Les-Eaux',
+                  img: 'cin-amand.jpg'
+          },
           ]
-
         },
-      debut: '2020-04-23T15:20:00',
+      debut: '2020-05-29T15:20:00',
       prix: 10.50
     },
+    
     {
       id: 1,
-      cinema:
-      {
-        id: 2,
-            nom: 'Cin\'Amand', 
-            adresse: 'Rocade du Nord, 59230 Saint-Amand-les-Eaux',
-            ville: 'Saint-Amand-Les-Eaux',
-            img: 'cin-amand.jpg'
-    },
-      film:
-        {
-          id: 0 ,
-          titre: 'D.A.R.Y.L.',
-          image: 'daryl.jpg',
-          duree: {hours: 1, minutes: 39},
-          synopsis: 'Daryl, enfant adopte et heureux, est doué de facultes extraordinaires. Ses qualités surprenantes excitent la convoitise des militaires.',
-          cinemas: [
-          {
-            id: 2,
-            nom: 'Cin\'Amand', 
-            adresse: 'Rocade du Nord, 59230 Saint-Amand-les-Eaux',
-            ville: 'Saint-Amand-Les-Eaux',
-            img: 'cin-amand.jpg'
-        } 
-      ]
-
-    },
-  debut: '2020-04-23T15:20:00',
-  prix: 6.50
-},
-    {
-      id: 2,
       cinema:
       {
         id: 2,
@@ -76,7 +51,7 @@ export const
     }, 
       film:
         {
-          id: 2,
+          id: 3,
           titre: 'La reine des neiges 2',
           image: 'frozen2.jpg',
           duree: {hours: 1, minutes: 44},
@@ -88,14 +63,14 @@ export const
               adresse: 'Rocade du Nord, 59230 Saint-Amand-les-Eaux',
               ville: 'Saint-Amand-Les-Eaux',
               img: 'cin-amand.jpg'
-          }
+            }
           ]
         },
-      debut: '2020-04-23T15:20:00',
+      debut: '2020-05-29T15:20:00',
       prix: 9.70
     },
     {
-      id: 3,
+      id: 2,
       cinema:
       {
         id: 1,
@@ -121,7 +96,7 @@ export const
           }
         ]
       },
-      debut: '2020-04-23T15:20:00',
+      debut: '2020-05-29T15:20:00',
       prix: 9.50
     }
   ]

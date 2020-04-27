@@ -12,7 +12,7 @@
         <td>{{dateSeance(seance.debut)}}</td>
         <td>{{heureDebutSeance(seance.debut)}}</td>
         <td>{{seance.prix | currency:'EUR':'symbol':undefined:'fr-FR'}}</td>
-        <td><button class="btn btn-primary" (click)="ajouterPanier(seance)"><span class="material-icons align-middle">add_shopping_cart</span> Reserver </button></td>
+        <td><button class="btn btn-primary" (click)="ajouterPanier(seance)"> Reserver </button></td>
       </tr>
     </tbody>
 </table>

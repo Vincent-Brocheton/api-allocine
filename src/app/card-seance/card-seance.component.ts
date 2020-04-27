@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as moment from 'moment';
-import { Time } from '@angular/common';
 import { PanierService } from '../panier.service';
 
 @Component({

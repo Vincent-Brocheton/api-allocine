@@ -10,7 +10,7 @@ export class SeanceService {
 
   constructor() { }
 
-  getAllSeanceByCinemaByFilm(idCinema, idFilm): Seance[] {
+  getAllSeance(idCinema, idFilm): Seance[] {
 
     let seancesFiltered = seances.filter(
       s =>
@@ -30,8 +30,5 @@ export class SeanceService {
     //Trier par date/heure
     return seancesFiltered.sort((a,b) => moment(a.debut).isBefore(b.debut)? -1 : 1);
   }
-
-  getNbreSeanceByFilmByCinema(idCinema, idFilm) {
-    return this.getAllSeanceByCinemaByFilm(idCinema, idFilm).length;
-  }
+  
 }
